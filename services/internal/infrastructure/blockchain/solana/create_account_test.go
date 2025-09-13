@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/mr-tron/base58"
-	sdk "github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana"
+	sdk "github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana"
 )
 
 func TestCreateAccount_ReturnsValidBase58Keys(t *testing.T) {

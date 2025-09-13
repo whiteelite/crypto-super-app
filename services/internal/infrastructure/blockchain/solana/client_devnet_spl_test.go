@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/mr-tron/base58"
-	sdk "github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana"
-	"github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/models"
+	sdk "github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana"
+	"github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/models"
 )
 
 func TestDevnet_SPL_MintAndTransfer(t *testing.T) {

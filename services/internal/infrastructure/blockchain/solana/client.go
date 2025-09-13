@@ -10,7 +10,7 @@ import (
 	"github.com/blocto/solana-go-sdk/common"
 	"github.com/blocto/solana-go-sdk/types"
 	"github.com/mr-tron/base58"
-	models "github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/models"
+	models "github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/models"
 )
 
 type Client struct {

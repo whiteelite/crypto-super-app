@@ -1,8 +1,8 @@
 package mappers
 
 import (
-	entities "github.com/whiteelite/superapp/services/internal/domain/entities/solana"
-	"github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/models"
+	entities "github.com/whiteelite/superapp/internal/domain/entities/solana"
+	"github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/models"
 )
 
 func ToAccount(entity entities.Account) models.Account {

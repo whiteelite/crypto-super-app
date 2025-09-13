@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana"
-	"github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/models"
+	sdk "github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana"
+	"github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/models"
 )
 
 func TestDevnet_SOL_AirdropAndTransfer(t *testing.T) {

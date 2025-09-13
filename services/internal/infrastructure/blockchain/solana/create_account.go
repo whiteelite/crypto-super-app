@@ -3,9 +3,9 @@ package sdk
 import (
 	"github.com/blocto/solana-go-sdk/types"
 	"github.com/mr-tron/base58"
-	entities "github.com/whiteelite/superapp/services/internal/domain/entities/solana"
-	"github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/mappers"
-	"github.com/whiteelite/superapp/services/internal/infrastructure/blockchain/solana/models"
+	entities "github.com/whiteelite/superapp/internal/domain/entities/solana"
+	"github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/mappers"
+	"github.com/whiteelite/superapp/internal/infrastructure/blockchain/solana/models"
 )
 
 func (c *Client) CreateAccount() entities.Account {
