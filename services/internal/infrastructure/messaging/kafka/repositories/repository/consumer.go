@@ -20,6 +20,8 @@ func StartConsumer[T any | shared.Entity](
 	errors chan<- error,
 	confirmed <-chan *T,
 ) {
+	defer close(errors)
+	defer close(bucket)
 	defer wg.Done()
 
 	// Read messages from the reader
@@ -96,6 +98,4 @@ func StartConsumer[T any | shared.Entity](
 	}()
 
 	<-ctx.Done()
-	close(bucket)
-	close(errors)
 }

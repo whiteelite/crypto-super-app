@@ -18,12 +18,12 @@ func StartProducer[T any | shared.Entity](
 	bucket <-chan *T,
 	errors chan<- error,
 ) {
+	defer close(errors)
 	defer wg.Done()
 
 	for {
 		select {
 		case <-ctx.Done():
-			close(errors)
 			return
 		default:
 			request := <-bucket
@@ -39,6 +39,7 @@ func StartProducer[T any | shared.Entity](
 				errors <- err
 				continue
 			}
+
 			err = writer.WriteMessages(ctx, sdk.Message{
 				Key:   []byte(model.Hash),
 				Value: []byte(serialized),
