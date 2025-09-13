@@ -3,7 +3,7 @@ package repositories
 import (
 	"context"
 
-	shared "github.com/whiteelite/steppe/pkg/shared/domain/entities"
+	shared "github.com/whiteelite/superapp/pkg/shared/domain/entities"
 )
 
 type Pagination interface {

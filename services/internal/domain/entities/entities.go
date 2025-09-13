@@ -1,11 +1,11 @@
-	package entities
+package entities
 
 import (
 	"time"
 
 	"github.com/google/uuid"
 	"github.com/shopspring/decimal"
-	"github.com/whiteelite/steppe/pkg/shared/domain/entities"
+	"github.com/whiteelite/superapp/pkg/shared/domain/entities"
 )
 
 type (
